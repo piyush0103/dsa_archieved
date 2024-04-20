@@ -14,13 +14,14 @@ public class LeftRotateArray {
 			listArr.add(a);
 		}
 
-		int left[] = {36};
+		int left[] = {36,2};
 
 		ArrayList<Integer> leftArr = new ArrayList<>();
 
 		for (Integer a : left) {
 			leftArr.add(a);
 		}
+		System.out.println("print left arr    "+ leftArr);
 		ArrayList<ArrayList<Integer>> list = solveRotate(listArr, leftArr);
 
 		for (List<Integer> arrList : list) {
@@ -45,7 +46,7 @@ public class LeftRotateArray {
 
 			}else {
 				System.out.println("coming in  left");
-				leftList = leftRotate(listArr, size % a);
+				leftList = leftRotate(listArr, a);
 
 			}
 			listLeftRotated.add(leftList);

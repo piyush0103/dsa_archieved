@@ -21,11 +21,11 @@ public class ArrayRotateFromStart {
 			System.out.print(ds + " ");
 		}
 		int arrRotated[];
-		arrRotated = arrayRotate(arr, n, d);
+//		arrRotated = arrayRotate(arr, n, d);
 
 //arrRotated=arrayRotateByJugglingAlgorithm(arr,n,d);
 
-//		arrRotated = arrayRotateByTempArray(arr, n, d);
+		arrRotated = arrayRotateByTempArrayFromBack(arr, n, d);
 
 		System.out.println("\narray after rotation");
 
@@ -34,8 +34,8 @@ public class ArrayRotateFromStart {
 		}
 	}
 
-	private static int[] arrayRotateByTempArray(int[] arr, int n, int d) {
-		// TODO Auto-generated method stub
+	private static int[] arrayRotateByTempArrayFromBack(int[] arr, int n, int d) {
+		// TODO Auto-generated method stub8
 
 //	 we get same array after n rotation
 		while (d > n) {

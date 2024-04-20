@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Array_pair {
-
+// ok will
 	public int solve(ArrayList<Integer> A, int B) {
 		Integer[] arr = A.toArray(new Integer[0]);
 		
